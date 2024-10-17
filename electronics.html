@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MegaDeals - Electronics</title>
+  <header>
+    <a href="./index.html">Home</a>
+    <h1>Electronics</h1>
+</header>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #d2dbdc;
+      margin: 0;
+      padding: 0;
+    }
+
+    .electronics-section {
+      padding: 50px 0;
+      text-align: center;
+      background-color: #7fe4f0;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .items-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0 10px;
+    }
+
+    .item-card {
+      background-color: #111010;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .item-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .item-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .item-details {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .item-details h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #ff4081;
+    }
+
+    .item-details p {
+      font-size: 1em;
+      color: #666;
+    }
+
+    .item-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ff4081;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .item-btn:hover {
+      background-color: #e83e70;
+    }
+
+    @media (max-width: 768px) {
+      .items-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="electronics-section">
+    <h2>Electronics</h2>
+    <div class="items-container">
+      <div class="item-card">
+        <img src="./images/laptop.jpeg" alt="Laptop 1" />
+        <div class="item-details">
+          <h3>Dell XPS 13</h3>
+          <p>Ultra-sleek design with powerful performance for professionals.</p>
+          <button class="item-btn">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <img src="./images/headphones-1.jpeg" alt="Headphones 1" />
+        <div class="item-details">
+          <h3>Sony WH-1000XM4</h3>
+          <p>Noise-canceling headphones for immersive audio experience.</p>
+          <button class="item-btn">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <img src="./images/camera.jpeg" alt="Camera 1" />
+        <div class="item-details">
+          <h3>Canon EOS R5</h3>
+          <p>Professional-grade mirrorless camera with 8K video recording.</p>
+          <button class="item-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

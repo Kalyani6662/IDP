@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MegaDeals - Grocery</title>
+  <header>
+    <a href="./index.html">Home</a>
+    <h1>grocery</h1>
+</header>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #79e2ee;
+      margin: 0;
+      padding: 0;
+    }
+
+    .grocery-section {
+      padding: 50px 0;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .items-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0 10px;
+    }
+
+    .item-card {
+      background-color: #0a0a0a;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .item-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .item-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .item-details {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .item-details h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #ff4081;
+    }
+
+    .item-details p {
+      font-size: 1em;
+      color: #666;
+    }
+
+    .item-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ff4081;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .item-btn:hover {
+      background-color: #e83e70;
+    }
+
+    @media (max-width: 768px) {
+      .items-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grocery-section">
+    <h2>Grocery Deals</h2>
+    <div class="items-container">
+      <div class="item-card">
+        <img src="./images/grocery.jpeg" alt="Fruits" />
+        <div class="item-details">
+          <h3>Fresh Fruits</h3>
+          <p>Organic and fresh fruits delivered to your doorstep.</p>
+          <button class="item-btn">Order Now</button>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <img src="./images/vegetables.jpeg" alt="Vegetables" />
+        <div class="item-details">
+          <h3>Vegetable Basket</h3>
+          <p>Healthy and fresh vegetables picked just for you.</p>
+          <button class="item-btn">Order Now</button>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <img src="./images/grocery.jpeg" alt="Grocery Pack" />
+        <div class="item-details">
+          <h3>Grocery Pack</h3>
+          <p>All your daily essentials in one convenient pack.</p>
+          <button class="item-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
